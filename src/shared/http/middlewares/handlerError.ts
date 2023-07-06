@@ -11,6 +11,7 @@ const handlerError = (
         return res.status(error.statusCode).json({
             error: true,
             message: error.message,
+            code: error.code,
         });
     }
 
